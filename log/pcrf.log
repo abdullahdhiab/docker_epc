@@ -1,0 +1,413 @@
+Open5GS daemon v2.5.5-81-g92efca1
+
+06/07 20:08:02.926: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/pcrf.yaml' (../lib/app/ogs-init.c:126)
+06/07 20:08:02.926: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/pcrf.log' (../lib/app/ogs-init.c:129)
+06/07 20:08:02.930: [dbi] INFO: MongoDB URI: 'mongodb://10.20.0.2/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+06/07 20:08:02.935: [diam] ERROR: pid:Main in fdderror@fdd.y:69: /open5gs/install/etc/freeDiameter/pcrf.conf:263.71 : Name or service not known
+ ((null):0)
+06/07 20:08:02.937: [diam] ERROR: pid:Main in fdderror@fdd.y:69: /open5gs/install/etc/freeDiameter/pcrf.conf:263.71 : An error occurred while parsing the configuration file
+ ((null):0)
+06/07 20:08:02.939: [diam] ERROR: pid:Main in fd_conf_parse@config.c:281: ERROR: in '((fddparse(fd_g_config)))' :	Invalid argument
+ ((null):0)
+06/07 20:08:02.939: [diam] ERROR: pid:Main in fd_core_parseconf_int@core.c:245: ERROR: in '((fd_conf_parse()))' :	Invalid argument
+ ((null):0)
+06/07 20:08:02.941: [diam] ERROR: pid:Main in ogs_diam_init@init.c:49: ERROR: in '(fd_core_parseconf(conffile))' :	Invalid argument
+ ((null):0)
+06/07 20:08:02.942: [pcrf] FATAL: pcrf_fd_init: Assertion `rv == 0' failed. (../src/pcrf/pcrf-fd-path.c:29)
+06/07 20:08:02.943: [core] FATAL: backtrace() returned 7 addresses (../lib/core/ogs-abort.c:37)
+./open5gs-pcrfd(+0x6f1a) [0x560e8cbe0f1a]
+./open5gs-pcrfd(+0x57c2) [0x560e8cbdf7c2]
+./open5gs-pcrfd(+0x4d5e) [0x560e8cbded5e]
+./open5gs-pcrfd(+0x5643) [0x560e8cbdf643]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7f7e7dfb2083]
+./open5gs-pcrfd(+0x4c8e) [0x560e8cbdec8e]
+Open5GS daemon v2.5.5-81-g92efca1
+
+06/07 20:25:00.181: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/pcrf.yaml' (../lib/app/ogs-init.c:126)
+06/07 20:25:00.182: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/pcrf.log' (../lib/app/ogs-init.c:129)
+06/07 20:25:00.186: [dbi] INFO: MongoDB URI: 'mongodb://10.20.0.2/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+06/07 20:25:00.247: [app] INFO: PCRF initialize...done (../src/pcrf/app-init.c:31)
+Open5GS daemon v2.5.5-81-g92efca1
+
+06/07 20:39:03.368: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/pcrf.yaml' (../lib/app/ogs-init.c:126)
+06/07 20:39:03.369: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/pcrf.log' (../lib/app/ogs-init.c:129)
+06/07 20:39:03.372: [dbi] INFO: MongoDB URI: 'mongodb://10.20.0.2/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+06/07 20:39:03.415: [app] INFO: PCRF initialize...done (../src/pcrf/app-init.c:31)
+Open5GS daemon v2.5.5-81-g92efca1
+
+06/07 20:54:49.482: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/pcrf.yaml' (../lib/app/ogs-init.c:126)
+06/07 20:54:49.483: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/pcrf.log' (../lib/app/ogs-init.c:129)
+06/07 20:54:49.486: [dbi] INFO: MongoDB URI: 'mongodb://10.20.0.2/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+06/07 20:54:49.527: [app] INFO: PCRF initialize...done (../src/pcrf/app-init.c:31)
+Open5GS daemon v2.5.5-81-g92efca1
+
+06/09 03:41:49.097: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/pcrf.yaml' (../lib/app/ogs-init.c:126)
+06/09 03:41:49.098: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/pcrf.log' (../lib/app/ogs-init.c:129)
+06/09 03:41:49.101: [dbi] INFO: MongoDB URI: 'mongodb://10.20.0.2/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+06/09 03:41:49.153: [app] INFO: PCRF initialize...done (../src/pcrf/app-init.c:31)
+06/09 03:41:49.156: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in fd_p_ce_msgrcv@p_ce.c:747: ERROR: in '(save_remote_CE_info(*msg, peer, &pei, &rc))' :	Invalid argument
+ ((null):0)
+06/09 03:41:49.157: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:116: DROPPED 'Internal error ('smf.epc.mnc001.mcc967.sabafon.com'): unhandled message.'
+ ((null):0)
+06/09 03:41:49.157: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:      'Capabilities-Exchange-Answer'
+ ((null):0)
+06/09 03:41:49.158: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        Version: 0x01
+ ((null):0)
+06/09 03:41:49.158: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        Length: 168
+ ((null):0)
+06/09 03:41:49.158: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        Flags: 0x20 (--E-)
+ ((null):0)
+06/09 03:41:49.159: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        Command Code: 257
+ ((null):0)
+06/09 03:41:49.159: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        ApplicationId: 0
+ ((null):0)
+06/09 03:41:49.160: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        Hop-by-Hop Identifier: 0x1978590B
+ ((null):0)
+06/09 03:41:49.160: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        End-to-End Identifier: 0x54D34152
+ ((null):0)
+06/09 03:41:49.160: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:         {internal data}: src:smf.epc.mnc001.mcc967.sabafon.com(33) rwb:(nil) rt:2 cb:(nil),(nil)((nil)) qry:0x7f70b8000ce0 asso:0 sess:(nil)
+ ((null):0)
+06/09 03:41:49.160: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Result-Code'(268) l=12 f=-M val='DIAMETER_UNKNOWN_PEER' (3010 (0xbc2))
+ ((null):0)
+06/09 03:41:49.161: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Error-Message'(281) l=29 f=-- val="DIAMETER_UNKNOWN_PEER"
+ ((null):0)
+06/09 03:41:49.161: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Origin-Host'(264) l=45 f=-M val="smf.epc.mnc001.mcc967.3gppnetwork.org"
+ ((null):0)
+06/09 03:41:49.162: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Origin-Realm'(296) l=41 f=-M val="epc.mnc001.mcc967.3gppnetwork.org"
+ ((null):0)
+06/09 03:41:49.162: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Origin-State-Id'(278) l=12 f=-M val=1686271297 (0x64827541)
+ ((null):0)
+06/09 03:42:18.880: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in fd_p_ce_msgrcv@p_ce.c:747: ERROR: in '(save_remote_CE_info(*msg, peer, &pei, &rc))' :	Invalid argument
+ ((null):0)
+06/09 03:42:18.880: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:116: DROPPED 'Internal error ('smf.epc.mnc001.mcc967.sabafon.com'): unhandled message.'
+ ((null):0)
+06/09 03:42:18.881: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:      'Capabilities-Exchange-Answer'
+ ((null):0)
+06/09 03:42:18.882: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        Version: 0x01
+ ((null):0)
+06/09 03:42:18.882: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        Length: 168
+ ((null):0)
+06/09 03:42:18.883: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        Flags: 0x20 (--E-)
+ ((null):0)
+06/09 03:42:18.884: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        Command Code: 257
+ ((null):0)
+06/09 03:42:18.884: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        ApplicationId: 0
+ ((null):0)
+06/09 03:42:18.885: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        Hop-by-Hop Identifier: 0x1978590C
+ ((null):0)
+06/09 03:42:18.885: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        End-to-End Identifier: 0x54D34153
+ ((null):0)
+06/09 03:42:18.886: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:         {internal data}: src:smf.epc.mnc001.mcc967.sabafon.com(33) rwb:(nil) rt:2 cb:(nil),(nil)((nil)) qry:0x7f70b8001b20 asso:0 sess:(nil)
+ ((null):0)
+06/09 03:42:18.886: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Result-Code'(268) l=12 f=-M val='DIAMETER_UNKNOWN_PEER' (3010 (0xbc2))
+ ((null):0)
+06/09 03:42:18.887: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Error-Message'(281) l=29 f=-- val="DIAMETER_UNKNOWN_PEER"
+ ((null):0)
+06/09 03:42:18.887: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Origin-Host'(264) l=45 f=-M val="smf.epc.mnc001.mcc967.3gppnetwork.org"
+ ((null):0)
+06/09 03:42:18.888: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Origin-Realm'(296) l=41 f=-M val="epc.mnc001.mcc967.3gppnetwork.org"
+ ((null):0)
+06/09 03:42:18.889: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Origin-State-Id'(278) l=12 f=-M val=1686271297 (0x64827541)
+ ((null):0)
+06/09 03:42:48.324: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in fd_p_ce_msgrcv@p_ce.c:747: ERROR: in '(save_remote_CE_info(*msg, peer, &pei, &rc))' :	Invalid argument
+ ((null):0)
+06/09 03:42:48.327: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:116: DROPPED 'Internal error ('smf.epc.mnc001.mcc967.sabafon.com'): unhandled message.'
+ ((null):0)
+06/09 03:42:48.331: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:      'Capabilities-Exchange-Answer'
+ ((null):0)
+06/09 03:42:48.333: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        Version: 0x01
+ ((null):0)
+06/09 03:42:48.335: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        Length: 168
+ ((null):0)
+06/09 03:42:48.337: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        Flags: 0x20 (--E-)
+ ((null):0)
+06/09 03:42:48.339: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        Command Code: 257
+ ((null):0)
+06/09 03:42:48.339: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        ApplicationId: 0
+ ((null):0)
+06/09 03:42:48.340: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        Hop-by-Hop Identifier: 0x1978590D
+ ((null):0)
+06/09 03:42:48.341: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        End-to-End Identifier: 0x54D34154
+ ((null):0)
+06/09 03:42:48.342: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:         {internal data}: src:smf.epc.mnc001.mcc967.sabafon.com(33) rwb:(nil) rt:2 cb:(nil),(nil)((nil)) qry:0x7f70b8000ce0 asso:0 sess:(nil)
+ ((null):0)
+06/09 03:42:48.343: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Result-Code'(268) l=12 f=-M val='DIAMETER_UNKNOWN_PEER' (3010 (0xbc2))
+ ((null):0)
+06/09 03:42:48.343: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Error-Message'(281) l=29 f=-- val="DIAMETER_UNKNOWN_PEER"
+ ((null):0)
+06/09 03:42:48.344: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Origin-Host'(264) l=45 f=-M val="smf.epc.mnc001.mcc967.3gppnetwork.org"
+ ((null):0)
+06/09 03:42:48.346: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Origin-Realm'(296) l=41 f=-M val="epc.mnc001.mcc967.3gppnetwork.org"
+ ((null):0)
+06/09 03:42:48.347: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Origin-State-Id'(278) l=12 f=-M val=1686271297 (0x64827541)
+ ((null):0)
+06/09 03:43:19.000: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in fd_p_ce_msgrcv@p_ce.c:747: ERROR: in '(save_remote_CE_info(*msg, peer, &pei, &rc))' :	Invalid argument
+ ((null):0)
+06/09 03:43:19.000: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:116: DROPPED 'Internal error ('smf.epc.mnc001.mcc967.sabafon.com'): unhandled message.'
+ ((null):0)
+06/09 03:43:19.001: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:      'Capabilities-Exchange-Answer'
+ ((null):0)
+06/09 03:43:19.002: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        Version: 0x01
+ ((null):0)
+06/09 03:43:19.003: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        Length: 168
+ ((null):0)
+06/09 03:43:19.003: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        Flags: 0x20 (--E-)
+ ((null):0)
+06/09 03:43:19.004: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        Command Code: 257
+ ((null):0)
+06/09 03:43:19.004: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        ApplicationId: 0
+ ((null):0)
+06/09 03:43:19.005: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        Hop-by-Hop Identifier: 0x1978590E
+ ((null):0)
+06/09 03:43:19.006: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        End-to-End Identifier: 0x54D34155
+ ((null):0)
+06/09 03:43:19.007: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:         {internal data}: src:smf.epc.mnc001.mcc967.sabafon.com(33) rwb:(nil) rt:2 cb:(nil),(nil)((nil)) qry:0x7f70b8001b20 asso:0 sess:(nil)
+ ((null):0)
+06/09 03:43:19.007: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Result-Code'(268) l=12 f=-M val='DIAMETER_UNKNOWN_PEER' (3010 (0xbc2))
+ ((null):0)
+06/09 03:43:19.008: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Error-Message'(281) l=29 f=-- val="DIAMETER_UNKNOWN_PEER"
+ ((null):0)
+06/09 03:43:19.009: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Origin-Host'(264) l=45 f=-M val="smf.epc.mnc001.mcc967.3gppnetwork.org"
+ ((null):0)
+06/09 03:43:19.010: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Origin-Realm'(296) l=41 f=-M val="epc.mnc001.mcc967.3gppnetwork.org"
+ ((null):0)
+06/09 03:43:19.011: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Origin-State-Id'(278) l=12 f=-M val=1686271297 (0x64827541)
+ ((null):0)
+06/09 03:43:48.210: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in fd_p_ce_msgrcv@p_ce.c:747: ERROR: in '(save_remote_CE_info(*msg, peer, &pei, &rc))' :	Invalid argument
+ ((null):0)
+06/09 03:43:48.212: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:116: DROPPED 'Internal error ('smf.epc.mnc001.mcc967.sabafon.com'): unhandled message.'
+ ((null):0)
+06/09 03:43:48.216: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:      'Capabilities-Exchange-Answer'
+ ((null):0)
+06/09 03:43:48.220: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        Version: 0x01
+ ((null):0)
+06/09 03:43:48.221: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        Length: 168
+ ((null):0)
+06/09 03:43:48.222: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        Flags: 0x20 (--E-)
+ ((null):0)
+06/09 03:43:48.224: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        Command Code: 257
+ ((null):0)
+06/09 03:43:48.226: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        ApplicationId: 0
+ ((null):0)
+06/09 03:43:48.227: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        Hop-by-Hop Identifier: 0x1978590F
+ ((null):0)
+06/09 03:43:48.227: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        End-to-End Identifier: 0x54D34156
+ ((null):0)
+06/09 03:43:48.228: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:         {internal data}: src:smf.epc.mnc001.mcc967.sabafon.com(33) rwb:(nil) rt:2 cb:(nil),(nil)((nil)) qry:0x7f70b8000ce0 asso:0 sess:(nil)
+ ((null):0)
+06/09 03:43:48.229: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Result-Code'(268) l=12 f=-M val='DIAMETER_UNKNOWN_PEER' (3010 (0xbc2))
+ ((null):0)
+06/09 03:43:48.230: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Error-Message'(281) l=29 f=-- val="DIAMETER_UNKNOWN_PEER"
+ ((null):0)
+06/09 03:43:48.231: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Origin-Host'(264) l=45 f=-M val="smf.epc.mnc001.mcc967.3gppnetwork.org"
+ ((null):0)
+06/09 03:43:48.231: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Origin-Realm'(296) l=41 f=-M val="epc.mnc001.mcc967.3gppnetwork.org"
+ ((null):0)
+06/09 03:43:48.232: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Origin-State-Id'(278) l=12 f=-M val=1686271297 (0x64827541)
+ ((null):0)
+06/09 03:44:18.590: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in fd_p_ce_msgrcv@p_ce.c:747: ERROR: in '(save_remote_CE_info(*msg, peer, &pei, &rc))' :	Invalid argument
+ ((null):0)
+06/09 03:44:18.592: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:116: DROPPED 'Internal error ('smf.epc.mnc001.mcc967.sabafon.com'): unhandled message.'
+ ((null):0)
+06/09 03:44:18.596: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:      'Capabilities-Exchange-Answer'
+ ((null):0)
+06/09 03:44:18.600: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        Version: 0x01
+ ((null):0)
+06/09 03:44:18.603: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        Length: 168
+ ((null):0)
+06/09 03:44:18.607: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        Flags: 0x20 (--E-)
+ ((null):0)
+06/09 03:44:18.609: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        Command Code: 257
+ ((null):0)
+06/09 03:44:18.611: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        ApplicationId: 0
+ ((null):0)
+06/09 03:44:18.613: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        Hop-by-Hop Identifier: 0x19785910
+ ((null):0)
+06/09 03:44:18.614: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        End-to-End Identifier: 0x54D34157
+ ((null):0)
+06/09 03:44:18.615: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:         {internal data}: src:smf.epc.mnc001.mcc967.sabafon.com(33) rwb:(nil) rt:2 cb:(nil),(nil)((nil)) qry:0x7f70b8001b20 asso:0 sess:(nil)
+ ((null):0)
+06/09 03:44:18.617: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Result-Code'(268) l=12 f=-M val='DIAMETER_UNKNOWN_PEER' (3010 (0xbc2))
+ ((null):0)
+06/09 03:44:18.618: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Error-Message'(281) l=29 f=-- val="DIAMETER_UNKNOWN_PEER"
+ ((null):0)
+06/09 03:44:18.618: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Origin-Host'(264) l=45 f=-M val="smf.epc.mnc001.mcc967.3gppnetwork.org"
+ ((null):0)
+06/09 03:44:18.619: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Origin-Realm'(296) l=41 f=-M val="epc.mnc001.mcc967.3gppnetwork.org"
+ ((null):0)
+06/09 03:44:18.620: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Origin-State-Id'(278) l=12 f=-M val=1686271297 (0x64827541)
+ ((null):0)
+06/09 03:44:48.732: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in fd_p_ce_msgrcv@p_ce.c:747: ERROR: in '(save_remote_CE_info(*msg, peer, &pei, &rc))' :	Invalid argument
+ ((null):0)
+06/09 03:44:48.733: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:116: DROPPED 'Internal error ('smf.epc.mnc001.mcc967.sabafon.com'): unhandled message.'
+ ((null):0)
+06/09 03:44:48.736: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:      'Capabilities-Exchange-Answer'
+ ((null):0)
+06/09 03:44:48.737: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        Version: 0x01
+ ((null):0)
+06/09 03:44:48.740: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        Length: 168
+ ((null):0)
+06/09 03:44:48.741: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        Flags: 0x20 (--E-)
+ ((null):0)
+06/09 03:44:48.742: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        Command Code: 257
+ ((null):0)
+06/09 03:44:48.743: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        ApplicationId: 0
+ ((null):0)
+06/09 03:44:48.744: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        Hop-by-Hop Identifier: 0x19785911
+ ((null):0)
+06/09 03:44:48.744: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        End-to-End Identifier: 0x54D34158
+ ((null):0)
+06/09 03:44:48.745: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:         {internal data}: src:smf.epc.mnc001.mcc967.sabafon.com(33) rwb:(nil) rt:2 cb:(nil),(nil)((nil)) qry:0x7f70b8000ce0 asso:0 sess:(nil)
+ ((null):0)
+06/09 03:44:48.746: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Result-Code'(268) l=12 f=-M val='DIAMETER_UNKNOWN_PEER' (3010 (0xbc2))
+ ((null):0)
+06/09 03:44:48.747: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Error-Message'(281) l=29 f=-- val="DIAMETER_UNKNOWN_PEER"
+ ((null):0)
+06/09 03:44:48.747: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Origin-Host'(264) l=45 f=-M val="smf.epc.mnc001.mcc967.3gppnetwork.org"
+ ((null):0)
+06/09 03:44:48.748: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Origin-Realm'(296) l=41 f=-M val="epc.mnc001.mcc967.3gppnetwork.org"
+ ((null):0)
+06/09 03:44:48.748: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Origin-State-Id'(278) l=12 f=-M val=1686271297 (0x64827541)
+ ((null):0)
+06/09 03:45:20.719: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in fd_p_ce_msgrcv@p_ce.c:747: ERROR: in '(save_remote_CE_info(*msg, peer, &pei, &rc))' :	Invalid argument
+ ((null):0)
+06/09 03:45:20.721: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:116: DROPPED 'Internal error ('smf.epc.mnc001.mcc967.sabafon.com'): unhandled message.'
+ ((null):0)
+06/09 03:45:20.722: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:      'Capabilities-Exchange-Answer'
+ ((null):0)
+06/09 03:45:20.723: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        Version: 0x01
+ ((null):0)
+06/09 03:45:20.724: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        Length: 168
+ ((null):0)
+06/09 03:45:20.725: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        Flags: 0x20 (--E-)
+ ((null):0)
+06/09 03:45:20.726: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        Command Code: 257
+ ((null):0)
+06/09 03:45:20.727: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        ApplicationId: 0
+ ((null):0)
+06/09 03:45:20.728: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        Hop-by-Hop Identifier: 0x19785912
+ ((null):0)
+06/09 03:45:20.729: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        End-to-End Identifier: 0x54D34159
+ ((null):0)
+06/09 03:45:20.730: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:         {internal data}: src:smf.epc.mnc001.mcc967.sabafon.com(33) rwb:(nil) rt:2 cb:(nil),(nil)((nil)) qry:0x7f70b8001b20 asso:0 sess:(nil)
+ ((null):0)
+06/09 03:45:20.736: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Result-Code'(268) l=12 f=-M val='DIAMETER_UNKNOWN_PEER' (3010 (0xbc2))
+ ((null):0)
+06/09 03:45:20.737: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Error-Message'(281) l=29 f=-- val="DIAMETER_UNKNOWN_PEER"
+ ((null):0)
+06/09 03:45:20.739: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Origin-Host'(264) l=45 f=-M val="smf.epc.mnc001.mcc967.3gppnetwork.org"
+ ((null):0)
+06/09 03:45:20.741: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Origin-Realm'(296) l=41 f=-M val="epc.mnc001.mcc967.3gppnetwork.org"
+ ((null):0)
+06/09 03:45:20.743: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Origin-State-Id'(278) l=12 f=-M val=1686271297 (0x64827541)
+ ((null):0)
+06/09 03:45:49.287: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in fd_p_ce_msgrcv@p_ce.c:747: ERROR: in '(save_remote_CE_info(*msg, peer, &pei, &rc))' :	Invalid argument
+ ((null):0)
+06/09 03:45:49.288: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:116: DROPPED 'Internal error ('smf.epc.mnc001.mcc967.sabafon.com'): unhandled message.'
+ ((null):0)
+06/09 03:45:49.288: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:      'Capabilities-Exchange-Answer'
+ ((null):0)
+06/09 03:45:49.289: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        Version: 0x01
+ ((null):0)
+06/09 03:45:49.289: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        Length: 168
+ ((null):0)
+06/09 03:45:49.290: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        Flags: 0x20 (--E-)
+ ((null):0)
+06/09 03:45:49.290: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        Command Code: 257
+ ((null):0)
+06/09 03:45:49.291: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        ApplicationId: 0
+ ((null):0)
+06/09 03:45:49.291: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        Hop-by-Hop Identifier: 0x19785913
+ ((null):0)
+06/09 03:45:49.292: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        End-to-End Identifier: 0x54D3415A
+ ((null):0)
+06/09 03:45:49.292: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:         {internal data}: src:smf.epc.mnc001.mcc967.sabafon.com(33) rwb:(nil) rt:2 cb:(nil),(nil)((nil)) qry:0x7f70b8000ce0 asso:0 sess:(nil)
+ ((null):0)
+06/09 03:45:49.293: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Result-Code'(268) l=12 f=-M val='DIAMETER_UNKNOWN_PEER' (3010 (0xbc2))
+ ((null):0)
+06/09 03:45:49.293: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Error-Message'(281) l=29 f=-- val="DIAMETER_UNKNOWN_PEER"
+ ((null):0)
+06/09 03:45:49.293: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Origin-Host'(264) l=45 f=-M val="smf.epc.mnc001.mcc967.3gppnetwork.org"
+ ((null):0)
+06/09 03:45:49.294: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Origin-Realm'(296) l=41 f=-M val="epc.mnc001.mcc967.3gppnetwork.org"
+ ((null):0)
+06/09 03:45:49.294: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Origin-State-Id'(278) l=12 f=-M val=1686271297 (0x64827541)
+ ((null):0)
+06/09 03:46:17.606: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in fd_p_ce_msgrcv@p_ce.c:747: ERROR: in '(save_remote_CE_info(*msg, peer, &pei, &rc))' :	Invalid argument
+ ((null):0)
+06/09 03:46:17.607: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:116: DROPPED 'Internal error ('smf.epc.mnc001.mcc967.sabafon.com'): unhandled message.'
+ ((null):0)
+06/09 03:46:17.610: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:      'Capabilities-Exchange-Answer'
+ ((null):0)
+06/09 03:46:17.612: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        Version: 0x01
+ ((null):0)
+06/09 03:46:17.615: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        Length: 168
+ ((null):0)
+06/09 03:46:17.617: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        Flags: 0x20 (--E-)
+ ((null):0)
+06/09 03:46:17.620: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        Command Code: 257
+ ((null):0)
+06/09 03:46:17.621: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        ApplicationId: 0
+ ((null):0)
+06/09 03:46:17.624: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        Hop-by-Hop Identifier: 0x19785914
+ ((null):0)
+06/09 03:46:17.625: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        End-to-End Identifier: 0x54D3415B
+ ((null):0)
+06/09 03:46:17.626: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:         {internal data}: src:smf.epc.mnc001.mcc967.sabafon.com(33) rwb:(nil) rt:2 cb:(nil),(nil)((nil)) qry:0x7f70b8001b20 asso:0 sess:(nil)
+ ((null):0)
+06/09 03:46:17.628: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Result-Code'(268) l=12 f=-M val='DIAMETER_UNKNOWN_PEER' (3010 (0xbc2))
+ ((null):0)
+06/09 03:46:17.630: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Error-Message'(281) l=29 f=-- val="DIAMETER_UNKNOWN_PEER"
+ ((null):0)
+06/09 03:46:17.631: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Origin-Host'(264) l=45 f=-M val="smf.epc.mnc001.mcc967.3gppnetwork.org"
+ ((null):0)
+06/09 03:46:17.632: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Origin-Realm'(296) l=41 f=-M val="epc.mnc001.mcc967.3gppnetwork.org"
+ ((null):0)
+06/09 03:46:17.633: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Origin-State-Id'(278) l=12 f=-M val=1686271297 (0x64827541)
+ ((null):0)
+06/09 03:46:49.168: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in fd_p_ce_msgrcv@p_ce.c:747: ERROR: in '(save_remote_CE_info(*msg, peer, &pei, &rc))' :	Invalid argument
+ ((null):0)
+06/09 03:46:49.175: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:116: DROPPED 'Internal error ('smf.epc.mnc001.mcc967.sabafon.com'): unhandled message.'
+ ((null):0)
+06/09 03:46:49.179: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:      'Capabilities-Exchange-Answer'
+ ((null):0)
+06/09 03:46:49.180: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        Version: 0x01
+ ((null):0)
+06/09 03:46:49.183: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        Length: 168
+ ((null):0)
+06/09 03:46:49.185: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        Flags: 0x20 (--E-)
+ ((null):0)
+06/09 03:46:49.186: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        Command Code: 257
+ ((null):0)
+06/09 03:46:49.187: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        ApplicationId: 0
+ ((null):0)
+06/09 03:46:49.187: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        Hop-by-Hop Identifier: 0x19785915
+ ((null):0)
+06/09 03:46:49.188: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:        End-to-End Identifier: 0x54D3415C
+ ((null):0)
+06/09 03:46:49.190: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:         {internal data}: src:smf.epc.mnc001.mcc967.sabafon.com(33) rwb:(nil) rt:2 cb:(nil),(nil)((nil)) qry:0x7f70b8000ce0 asso:0 sess:(nil)
+ ((null):0)
+06/09 03:46:49.190: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Result-Code'(268) l=12 f=-M val='DIAMETER_UNKNOWN_PEER' (3010 (0xbc2))
+ ((null):0)
+06/09 03:46:49.195: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Error-Message'(281) l=29 f=-- val="DIAMETER_UNKNOWN_PEER"
+ ((null):0)
+06/09 03:46:49.196: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Origin-Host'(264) l=45 f=-M val="smf.epc.mnc001.mcc967.3gppnetwork.org"
+ ((null):0)
+06/09 03:46:49.197: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Origin-Realm'(296) l=41 f=-M val="epc.mnc001.mcc967.3gppnetwork.org"
+ ((null):0)
+06/09 03:46:49.199: [diam] ERROR: pid:PSM/smf.epc.mnc001.mcc967.sabafon.com in md_hook_cb_tree@dbg_msg_dumps.c:117:         AVP: 'Origin-State-Id'(278) l=12 f=-M val=1686271297 (0x64827541)
+ ((null):0)
+Open5GS daemon v2.5.5-81-g92efca1
+
+06/09 03:48:14.335: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/pcrf.yaml' (../lib/app/ogs-init.c:126)
+06/09 03:48:14.336: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/pcrf.log' (../lib/app/ogs-init.c:129)
+06/09 03:48:14.339: [dbi] INFO: MongoDB URI: 'mongodb://10.20.0.2/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+06/09 03:48:14.397: [app] INFO: PCRF initialize...done (../src/pcrf/app-init.c:31)
+06/09 03:48:14.402: [diam] INFO: CONNECTED TO 'smf.epc.mnc001.mcc967.sabafon.com' (SCTP,soc#15): (../lib/diameter/common/logger.c:108)
+Open5GS daemon v2.5.5-81-g92efca1
+
+06/09 20:25:27.913: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/pcrf.yaml' (../lib/app/ogs-init.c:126)
+06/09 20:25:27.913: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/pcrf.log' (../lib/app/ogs-init.c:129)
+06/09 20:25:27.917: [dbi] INFO: MongoDB URI: 'mongodb://172.20.0.2/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+06/09 20:25:27.977: [app] INFO: PCRF initialize...done (../src/pcrf/app-init.c:31)
+06/09 20:25:27.982: [diam] INFO: CONNECTED TO 'smf.epc.mnc001.mcc967.sgstel.com' (SCTP,soc#15): (../lib/diameter/common/logger.c:108)

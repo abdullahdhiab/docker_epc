@@ -1,0 +1,123 @@
+Open5GS daemon v2.5.5-81-g92efca1
+
+06/07 20:07:54.157: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:126)
+06/07 20:07:54.158: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:129)
+06/07 20:07:54.162: [sock] ERROR: getaddrinfo(0::29118:0x0) failed (22:Invalid argument) (../lib/core/ogs-sockaddr.c:116)
+06/07 20:07:54.163: [mme] FATAL: mme_context_parse_config: Assertion `rv == OGS_OK' failed. (../src/mme/mme-context.c:1265)
+06/07 20:07:54.164: [core] FATAL: backtrace() returned 7 addresses (../lib/core/ogs-abort.c:37)
+./open5gs-mmed(+0x10b87) [0x561c1d711b87]
+./open5gs-mmed(+0x8851) [0x561c1d709851]
+./open5gs-mmed(+0x7d83) [0x561c1d708d83]
+./open5gs-mmed(+0x866d) [0x561c1d70966d]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fe967cb5083]
+./open5gs-mmed(+0x7c9e) [0x561c1d708c9e]
+Open5GS daemon v2.5.5-81-g92efca1
+
+06/07 20:24:51.779: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:126)
+06/07 20:24:51.780: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:129)
+06/07 20:24:51.784: [sock] ERROR: getaddrinfo(0::29118:0x0) failed (22:Invalid argument) (../lib/core/ogs-sockaddr.c:116)
+06/07 20:24:51.784: [mme] FATAL: mme_context_parse_config: Assertion `rv == OGS_OK' failed. (../src/mme/mme-context.c:1265)
+06/07 20:24:51.785: [core] FATAL: backtrace() returned 7 addresses (../lib/core/ogs-abort.c:37)
+./open5gs-mmed(+0x10b87) [0x55b5a6417b87]
+./open5gs-mmed(+0x8851) [0x55b5a640f851]
+./open5gs-mmed(+0x7d83) [0x55b5a640ed83]
+./open5gs-mmed(+0x866d) [0x55b5a640f66d]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fee811ad083]
+./open5gs-mmed(+0x7c9e) [0x55b5a640ec9e]
+Open5GS daemon v2.5.5-81-g92efca1
+
+06/07 20:38:55.061: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:126)
+06/07 20:38:55.061: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:129)
+06/07 20:38:55.065: [mme] ERROR: No pgw.gtpc in '/open5gs/install/etc/open5gs/mme.yaml' (../src/mme/mme-context.c:209)
+06/07 20:38:55.066: [sctp] ERROR: Failed to intialize MME (../src/mme/app-init.c:30)
+06/07 20:38:55.066: [app] FATAL: Open5GS initialization failed. Aborted (../src/main.c:219)
+Open5GS daemon v2.5.5-81-g92efca1
+
+06/07 20:54:41.254: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:126)
+06/07 20:54:41.255: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:129)
+06/07 20:54:41.258: [mme] ERROR: No pgw.gtpc in '/open5gs/install/etc/open5gs/mme.yaml' (../src/mme/mme-context.c:209)
+06/07 20:54:41.258: [sctp] ERROR: Failed to intialize MME (../src/mme/app-init.c:30)
+06/07 20:54:41.259: [app] FATAL: Open5GS initialization failed. Aborted (../src/main.c:219)
+Open5GS daemon v2.5.5-81-g92efca1
+
+06/07 20:58:32.868: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:126)
+06/07 20:58:32.868: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:129)
+06/07 20:58:32.872: [sock] ERROR: getaddrinfo(0::29118:0x0) failed (22:Invalid argument) (../lib/core/ogs-sockaddr.c:116)
+06/07 20:58:32.873: [mme] FATAL: mme_context_parse_config: Assertion `rv == OGS_OK' failed. (../src/mme/mme-context.c:1265)
+06/07 20:58:32.873: [core] FATAL: backtrace() returned 7 addresses (../lib/core/ogs-abort.c:37)
+./open5gs-mmed(+0x10b87) [0x55b729291b87]
+./open5gs-mmed(+0x8851) [0x55b729289851]
+./open5gs-mmed(+0x7d83) [0x55b729288d83]
+./open5gs-mmed(+0x866d) [0x55b72928966d]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7f3c1f57e083]
+./open5gs-mmed(+0x7c9e) [0x55b729288c9e]
+Open5GS daemon v2.5.5-81-g92efca1
+
+06/08 20:03:37.871: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:126)
+06/08 20:03:37.872: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:129)
+06/08 20:03:37.875: [mme] ERROR: No pgw.gtpc in '/open5gs/install/etc/open5gs/mme.yaml' (../src/mme/mme-context.c:209)
+06/08 20:03:37.875: [sctp] ERROR: Failed to intialize MME (../src/mme/app-init.c:30)
+06/08 20:03:37.876: [app] FATAL: Open5GS initialization failed. Aborted (../src/main.c:219)
+Open5GS daemon v2.5.5-81-g92efca1
+
+06/08 20:41:00.628: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:126)
+06/08 20:41:00.628: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:129)
+06/08 20:41:00.646: [metrics] ERROR: Cannot start Prometheus HTTP server (../lib/metrics/prometheus/context.c:493)
+06/08 20:41:00.722: [diam] ERROR: pid:Main in fd_sctp_create_bind_server@sctp.c:883: ERROR: in '(sctp_bindx(*sock, sar, count, 0x01))' :	Cannot assign requested address
+ ((null):0)
+06/08 20:41:00.722: [diam] ERROR: pid:Main in fd_cnx_serv_sctp@cnxctx.c:181: ERROR: in '(fd_sctp_create_bind_server( &cnx->cc_socket, cnx->cc_family, ep_list, port ))' :	Cannot assign requested address
+ ((null):0)
+06/08 20:41:00.723: [diam] ERROR: pid:Main in fd_servers_start@server.c:355: ERROR: in '(s->conn = fd_cnx_serv_sctp(fd_g_config->cnf_port, empty_conf_ep ? ((void *)0) : &fd_g_config->cnf_endpoints))' :	Transport endpoint is not connected
+ ((null):0)
+06/08 20:41:00.724: [diam] ERROR: pid:Main in fd_core_start_int@core.c:300: ERROR: in '((fd_servers_start()))' :	Transport endpoint is not connected
+ ((null):0)
+06/08 20:41:00.725: [diam] ERROR: pid:Main in ogs_diam_start@init.c:71: ERROR: in '(fd_core_start())' :	Transport endpoint is not connected
+ ((null):0)
+06/08 20:41:00.838: [mme] FATAL: mme_fd_init: Assertion `ret == 0' failed. (../src/mme/mme-fd-path.c:1883)
+06/08 20:41:00.839: [core] FATAL: backtrace() returned 7 addresses (../lib/core/ogs-abort.c:37)
+./open5gs-mmed(+0x42e89) [0x56278f8ade89]
+./open5gs-mmed(+0x88c3) [0x56278f8738c3]
+./open5gs-mmed(+0x7d83) [0x56278f872d83]
+./open5gs-mmed(+0x866d) [0x56278f87366d]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fab5eff9083]
+./open5gs-mmed(+0x7c9e) [0x56278f872c9e]
+Open5GS daemon v2.5.5-81-g92efca1
+
+06/08 20:43:24.344: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:126)
+06/08 20:43:24.344: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:129)
+06/08 20:43:24.359: [metrics] INFO: metrics_server() [http://10.20.0.9]:9091 (../lib/metrics/prometheus/context.c:510)
+06/08 20:43:24.409: [gtp] INFO: gtp_server() [10.20.0.9]:2123 (../lib/gtp/path.c:30)
+06/08 20:43:24.410: [gtp] INFO: gtp_connect() [10.20.0.5]:2123 (../lib/gtp/path.c:60)
+06/08 20:43:24.411: [mme] INFO: s1ap_server() [10.20.0.9]:36412 (../src/mme/s1ap-sctp.c:62)
+06/08 20:43:24.412: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+06/08 20:43:31.235: [diam] INFO: CONNECTED TO 'hss.epc.mnc001.mcc967.sabafon.com' (SCTP,soc#8): (../lib/diameter/common/logger.c:108)
+Open5GS daemon v2.5.5-81-g92efca1
+
+06/09 03:41:42.540: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:126)
+06/09 03:41:42.541: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:129)
+06/09 03:41:42.555: [metrics] INFO: metrics_server() [http://10.20.0.9]:9091 (../lib/metrics/prometheus/context.c:510)
+06/09 03:41:42.606: [gtp] INFO: gtp_server() [10.20.0.9]:2123 (../lib/gtp/path.c:30)
+06/09 03:41:42.607: [gtp] INFO: gtp_connect() [10.20.0.5]:2123 (../lib/gtp/path.c:60)
+06/09 03:41:42.608: [mme] INFO: s1ap_server() [10.20.0.9]:36412 (../src/mme/s1ap-sctp.c:62)
+06/09 03:41:42.608: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+06/09 03:41:48.659: [diam] INFO: CONNECTED TO 'hss.epc.mnc001.mcc967.sabafon.com' (SCTP,soc#8): (../lib/diameter/common/logger.c:108)
+Open5GS daemon v2.5.5-81-g92efca1
+
+06/09 03:48:07.717: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:126)
+06/09 03:48:07.717: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:129)
+06/09 03:48:07.730: [metrics] INFO: metrics_server() [http://10.20.0.9]:9091 (../lib/metrics/prometheus/context.c:510)
+06/09 03:48:07.801: [gtp] INFO: gtp_server() [10.20.0.9]:2123 (../lib/gtp/path.c:30)
+06/09 03:48:07.802: [gtp] INFO: gtp_connect() [10.20.0.5]:2123 (../lib/gtp/path.c:60)
+06/09 03:48:07.803: [mme] INFO: s1ap_server() [10.20.0.9]:36412 (../src/mme/s1ap-sctp.c:62)
+06/09 03:48:07.803: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+06/09 03:48:14.216: [diam] INFO: CONNECTED TO 'hss.epc.mnc001.mcc967.sabafon.com' (SCTP,soc#8): (../lib/diameter/common/logger.c:108)
+Open5GS daemon v2.5.5-81-g92efca1
+
+06/09 20:25:21.012: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/mme.yaml' (../lib/app/ogs-init.c:126)
+06/09 20:25:21.013: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/mme.log' (../lib/app/ogs-init.c:129)
+06/09 20:25:21.030: [metrics] INFO: metrics_server() [http://172.20.0.9]:9091 (../lib/metrics/prometheus/context.c:510)
+06/09 20:25:21.138: [gtp] INFO: gtp_server() [172.20.0.9]:2123 (../lib/gtp/path.c:30)
+06/09 20:25:21.139: [gtp] INFO: gtp_connect() [172.20.0.5]:2123 (../lib/gtp/path.c:60)
+06/09 20:25:21.140: [mme] INFO: s1ap_server() [172.20.0.9]:36412 (../src/mme/s1ap-sctp.c:62)
+06/09 20:25:21.142: [sctp] INFO: MME initialize...done (../src/mme/app-init.c:33)
+06/09 20:25:27.750: [diam] INFO: CONNECTED TO 'hss.epc.mnc001.mcc967.sgstel.com' (SCTP,soc#8): (../lib/diameter/common/logger.c:108)

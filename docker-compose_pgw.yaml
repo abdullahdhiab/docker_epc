@@ -1,0 +1,213 @@
+version: '3'
+services:
+  mongo:
+    build: ./mongo
+    image: docker_mongo
+    container_name: epc_mongo
+    env_file:
+      - .env_epc
+    volumes:
+      - ./mongo:/mnt/mongo
+      - mongodbdata:/var/lib/mongodb
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    expose:
+      - "27017/udp"
+      - "27017/tcp"
+    networks:
+      epcnw:
+        ipv4_address: ${MONGO_IP}
+  webui:
+    image: docker_open5gs
+    container_name: epc_webui
+    depends_on:
+      - mongo
+    env_file:
+      - .env_epc
+    environment:
+      - COMPONENT_NAME=webui
+    volumes:
+      - ./webui:/mnt/webui
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    expose:
+      - "3000/tcp"
+    ports:
+      - "3000:3000/tcp"
+    networks:
+      epcnw:
+        ipv4_address: ${WEBUI_IP}
+  hss:
+    image: docker_open5gs
+    container_name: epc_hss
+    env_file:
+      - .env_epc
+    environment:
+      - COMPONENT_NAME=hss-1
+    volumes:
+      - ./hss:/mnt/hss
+      - ./log:/open5gs/install/var/log/open5gs
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    depends_on:
+      - mongo
+    expose:
+      - "3868/udp"
+      - "3868/tcp"
+      - "3868/sctp"
+      - "5868/udp"
+      - "5868/tcp"
+      - "5868/sctp"
+    networks:
+      epcnw:
+        ipv4_address: ${HSS_IP}
+  sgwc:
+    image: docker_open5gs
+    depends_on:
+      - hss
+    container_name: epc_sgwc
+    env_file:
+      - .env_epc
+    environment:
+      - COMPONENT_NAME=sgwc-1
+    volumes:
+      - ./sgwc:/mnt/sgwc
+      - ./log:/open5gs/install/var/log/open5gs
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    expose:
+      - "2123/udp"
+      - "8805/udp"
+    networks:
+      epcnw:
+        ipv4_address: ${SGWC_IP}
+  sgwu:
+    image: docker_open5gs
+    depends_on:
+      - hss
+    container_name: epc_sgwu
+    env_file:
+      - .env_epc
+    environment:
+      - COMPONENT_NAME=sgwu-1
+    volumes:
+      - ./sgwu:/mnt/sgwu
+      - ./log:/open5gs/install/var/log/open5gs
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    expose:
+      - "8805/udp"
+      - "2152/udp"
+    # ports:
+    #   - "2152:2152/udp"
+    networks:
+      epcnw:
+        ipv4_address: ${SGWU_IP}
+  mme:
+    image: docker_open5gs
+    depends_on:
+      - hss
+      - sgwc
+      - sgwu
+      - metrics
+    container_name: epc_mme
+    env_file:
+      - .env_epc
+    environment:
+      - COMPONENT_NAME=mme-1
+    volumes:
+      - ./mme:/mnt/mme
+      - ./log:/open5gs/install/var/log/open5gs
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    expose:
+      - "3868/udp"
+      - "3868/tcp"
+      - "3868/sctp"
+      - "5868/udp"
+      - "5868/tcp"
+      - "5868/sctp"
+      - "36412/sctp"
+      - "2123/udp"
+      - "9091/tcp"
+    # ports:
+    #   - "36412:36412/sctp"
+    networks:
+      epcnw:
+        ipv4_address: ${MME_IP}
+  dns:
+    build: ./dns
+    image: docker_dns
+    container_name: epc_dns
+    env_file:
+      - .env_epc
+    volumes:
+      - ./dns:/mnt/dns
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    expose:
+      - "53/udp"
+    networks:
+      epcnw:
+        ipv4_address: ${DNS_IP}
+  mysql:
+    build: ./mysql
+    image: docker_mysql
+    container_name: epc_mysql
+    env_file:
+      - .env_epc
+    volumes:
+      - dbdata:/var/lib/mysql
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    expose:
+      - "3306/tcp"
+    networks:
+      epcnw:
+        ipv4_address: ${MYSQL_IP}
+  smsc:
+    image: docker_kamailio
+    container_name: epc_smsc
+    dns: ${DNS_IP}
+    volumes:
+      - ./smsc:/mnt/smsc
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    env_file:
+      - .env_epc
+    environment:
+      - COMPONENT_NAME=smsc-1
+    depends_on:
+      - dns
+      - mysql
+    expose:
+      - "7090/udp"
+      - "7090/tcp"
+    networks:
+      epcnw:
+        ipv4_address: ${SMSC_IP}
+  metrics:
+    build: ./metrics
+    image: docker_metrics
+    container_name: epc_metrics
+    env_file:
+      - .env_epc
+    volumes:
+      - ./metrics:/mnt/metrics
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    expose:
+      - "9090/tcp"
+    ports:
+      - "9090:9090/tcp"
+    networks:
+      epcnw:
+        ipv4_address: ${METRICS_IP}
+networks:
+  epcnw:
+    ipam:
+      config:
+        - subnet: ${EPC_NETWORK}
+volumes:
+  mongodbdata: {}
+  dbdata: {}
