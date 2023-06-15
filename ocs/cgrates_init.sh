@@ -11,6 +11,7 @@
 
 # Author: DanB <danb@cgrates.org>
 #
+
 # Do NOT "set -e"
 
 # PATH should only include /usr/* if it runs after the mountnfs.sh script
@@ -21,14 +22,14 @@ DAEMON=/usr/bin/cgr-engine
 USER=cgrates
 GROUP=cgrates
 DAEMON_OPTS=""
-TUTFOLDER=/usr/share/cgrates/tutorials/fs_evsock/cgrates
+#TUTFOLDER=""
 TMP_DIR=/tmp/cgr_fsevsock/cgrates
-SCRIPTNAME=$TUTFOLDER/etc/init.d/$NAME
+SCRIPTNAME=/etc/init.d/$NAME
 RUNDIR=$TMP_DIR/run
 PIDFILE=$RUNDIR/cgr-engine.pid
 STACKTRACE=$RUNDIR/$NAME.strace
 ENABLE=true
-DAEMON_OPTS="-config_path=$TUTFOLDER/etc/cgrates"
+DAEMON_OPTS="-config_path=/etc/cgrates"
 CDREDIR=$TMP_DIR/cdre
 ERSINDIR=$TMP_DIR/ers/in
 ERSOUTDIR=$TMP_DIR/ers/out

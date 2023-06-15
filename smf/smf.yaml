@@ -39,6 +39,8 @@ smf:
     metrics:
       - addr: SMF_IP
         port: 9091
+    CTF:
+      enabled: yes
 
 # scp:
 #     sbi:
