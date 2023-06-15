@@ -1,5 +1,21 @@
 version: '3'
 services:
+  ocs:
+    image: cgrates:latest
+    container_name: epc_ocs
+    stdin_open: true
+    entrypoint: ["/bin/sh","-c","/ocs_entry.sh"]
+    env_file:
+      - .env_epc
+    volumes:
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    expose:
+      - "2012-2014/tcp"
+      - "2080-2081/tcp"
+    networks:
+      epcnw:
+        ipv4_address: ${OCS_IP}
   mongo:
     build: ./mongo
     image: docker_mongo
