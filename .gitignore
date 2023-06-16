@@ -1,0 +1,5 @@
+log/*
+ref/
+cgrates_v17.tar
+*.log
+

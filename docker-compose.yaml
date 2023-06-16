@@ -3,6 +3,7 @@ services:
   ocs:
     image: cgrates:latest
     container_name: epc_ocs
+    profiles: ["ocs","core"]
     stdin_open: true
     entrypoint: ["/bin/sh","-c","/ocs_entry.sh"]
     env_file:
@@ -20,6 +21,7 @@ services:
     build: ./mongo
     image: docker_mongo
     container_name: epc_mongo
+    profiles: ["db","core"]
     env_file:
       - .env_epc
     volumes:
@@ -36,6 +38,7 @@ services:
   webui:
     image: docker_open5gs
     container_name: epc_webui
+    profiles: ["webui","core"]
     depends_on:
       - mongo
     env_file:
@@ -57,6 +60,7 @@ services:
     build: ./mysql
     image: docker_mysql
     container_name: epc_mysql
+    profiles: ["db","core"]
     env_file:
       - .env_epc
     volumes:
@@ -72,6 +76,7 @@ services:
     build: ./metrics
     image: docker_metrics
     container_name: epc_metrics
+    profiles: ["metrics","core"]
     env_file:
       - .env_epc
     volumes:
@@ -89,6 +94,7 @@ services:
     build: ./dns
     image: docker_dns
     container_name: epc_dns
+    profiles: ["dns","core"]
     env_file:
       - .env_epc
     volumes:
@@ -103,6 +109,7 @@ services:
   smsc:
     image: docker_kamailio
     container_name: epc_smsc
+    profiles: ["smsc","core"]
     dns: ${DNS_IP}
     volumes:
       - ./smsc:/mnt/smsc
@@ -124,6 +131,7 @@ services:
   hss:
     image: docker_open5gs
     container_name: epc_hss
+    profiles: ["hss","core"]
     env_file:
       - .env_epc
     environment:
@@ -147,6 +155,7 @@ services:
         ipv4_address: ${HSS_IP}
   sgwc:
     image: docker_open5gs
+    profiles: ["sgw","core"]
     depends_on:
       - hss
     container_name: epc_sgwc
@@ -167,6 +176,7 @@ services:
         ipv4_address: ${SGWC_IP}
   sgwu:
     image: docker_open5gs
+    profiles: ["sgw","core"]
     depends_on:
       - hss
     container_name: epc_sgwu
@@ -189,6 +199,7 @@ services:
         ipv4_address: ${SGWU_IP}
   mme:
     image: docker_open5gs
+    profiles: ["mme","core"]
     depends_on:
       - hss
       - sgwc
@@ -222,6 +233,7 @@ services:
   pcrf:
     image: docker_open5gs
     container_name: epc_pcrf
+    profiles: ["pcrf","core"]
     env_file:
       - .env_epc
     environment:
@@ -246,6 +258,7 @@ services:
   smf:
     image: docker_open5gs
     container_name: epc_smf
+    profiles: ["smf","pgw","core"]
     env_file:
       - .env_epc
     environment:
@@ -271,6 +284,7 @@ services:
         ipv4_address: ${SMF_IP}
   upf:
     image: docker_open5gs
+    profiles: ["upf","pgw","core"]
     depends_on:
       - smf
     container_name: epc_upf
@@ -298,6 +312,57 @@ services:
     networks:
       epcnw:
         ipv4_address: ${UPF_IP}
+## RAN
+  srsenb_zmq:
+    profiles: ["enb","ran"]
+    image: docker_srslte:latest
+    container_name: srsenb_zmq
+    stdin_open: true
+    tty: true
+    privileged: true
+    volumes:
+      - ./srslte:/mnt/srslte
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    env_file:
+      - .env_epc
+    environment:
+      - COMPONENT_NAME=enb_zmq
+    expose:
+      - "36412/sctp"
+      - "2152/udp"
+      - "2000/tcp"
+      - "2001/tcp"
+    networks:
+      epcnw:
+        ipv4_address: ${SRS_ENB_IP}
+
+  srsue_zmq:
+    profiles: ["ue","ran"]
+    depends_on: 
+      - srsenb_zmq
+    image: docker_srslte:latest
+    container_name: srsue_zmq
+    stdin_open: true
+    tty: true
+    cap_add:
+      - NET_ADMIN
+    privileged: true
+    volumes:
+      - ./srslte:/mnt/srslte
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    env_file:
+      - .env_epc
+    environment:
+      - COMPONENT_NAME=ue_zmq
+    expose:
+      - "2000/tcp"
+      - "2001/tcp"
+    networks:
+      epcnw:
+        ipv4_address: ${SRS_UE_IP}
+
 networks:
   epcnw:
     ipam:

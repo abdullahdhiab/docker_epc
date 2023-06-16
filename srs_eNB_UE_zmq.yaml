@@ -1,0 +1,53 @@
+version: '3'
+services:
+  srsenb_zmq:
+    profiles: ["enb","ran"]
+    image: docker_srslte
+    container_name: srsenb_zmq
+    stdin_open: true
+    tty: true
+    privileged: true
+    volumes:
+      - ./srslte:/mnt/srslte
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    env_file:
+      - .env_epc
+    environment:
+      - COMPONENT_NAME=enb_zmq
+    expose:
+      - "36412/sctp"
+      - "2152/udp"
+      - "2000/tcp"
+      - "2001/tcp"
+    networks:
+      rannw:
+        ipv4_address: ${SRS_ENB_IP}
+  srsue_zmq:
+    profiles: ["ue","ran"]
+    image: docker_srslte
+    container_name: srsue_zmq
+    stdin_open: true
+    tty: true
+    cap_add:
+      - NET_ADMIN
+    privileged: true
+    volumes:
+      - ./srslte:/mnt/srslte
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    env_file:
+      - .env_epc
+    environment:
+      - COMPONENT_NAME=ue_zmq
+    expose:
+      - "2000/tcp"
+      - "2001/tcp"
+    networks:
+      rannw:
+        ipv4_address: ${SRS_UE_IP}
+networks:
+  rannw:
+    name: docker_epc_epcnw
+    external: true
+      

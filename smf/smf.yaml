@@ -20,8 +20,8 @@ smf:
         dnn: internet
         dev: ogstun
       - addr: 2001:230:cafe::1/48
-        dev: ogstun
         dnn: internet
+        dev: ogstun
       - addr: 192.168.101.1/24
         dnn: ims
         dev: ogstun2
@@ -39,7 +39,7 @@ smf:
     metrics:
       - addr: SMF_IP
         port: 9091
-    CTF:
+    ctf:
       enabled: yes
 
 # scp:
