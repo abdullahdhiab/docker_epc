@@ -13,3 +13,7 @@ sgwu:
 sgwc:
     pfcp:
       - addr: SGWC_IP
+
+upf:
+    gtpc:
+      addr: UPF_IP

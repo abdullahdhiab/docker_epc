@@ -33,8 +33,8 @@ mme:
 sgwc:
     gtpc:
       addr: SGWC_IP
-
-pgw:
+smf:
     gtpc:
-      - addr:
-        - MME_IP
+      - addr: SMF_IP
+
+

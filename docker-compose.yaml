@@ -3,7 +3,7 @@ services:
   ocs:
     image: cgrates:latest
     container_name: epc_ocs
-    profiles: ["ocs","core"]
+    profiles: ["ocs","base"]
     stdin_open: true
     entrypoint: ["/bin/sh","-c","/ocs_entry.sh"]
     env_file:
@@ -21,7 +21,7 @@ services:
     build: ./mongo
     image: docker_mongo
     container_name: epc_mongo
-    profiles: ["db","core"]
+    profiles: ["db","base"]
     env_file:
       - .env_epc
     volumes:
@@ -38,7 +38,7 @@ services:
   webui:
     image: docker_open5gs
     container_name: epc_webui
-    profiles: ["webui","core"]
+    profiles: ["webui","base"]
     depends_on:
       - mongo
     env_file:
@@ -60,7 +60,7 @@ services:
     build: ./mysql
     image: docker_mysql
     container_name: epc_mysql
-    profiles: ["db","core"]
+    profiles: ["db","base"]
     env_file:
       - .env_epc
     volumes:
@@ -76,7 +76,7 @@ services:
     build: ./metrics
     image: docker_metrics
     container_name: epc_metrics
-    profiles: ["metrics","core"]
+    profiles: ["metrics","base"]
     env_file:
       - .env_epc
     volumes:
@@ -94,7 +94,7 @@ services:
     build: ./dns
     image: docker_dns
     container_name: epc_dns
-    profiles: ["dns","core"]
+    profiles: ["dns","base"]
     env_file:
       - .env_epc
     volumes:
@@ -109,7 +109,7 @@ services:
   smsc:
     image: docker_kamailio
     container_name: epc_smsc
-    profiles: ["smsc","core"]
+    profiles: ["smsc","base"]
     dns: ${DNS_IP}
     volumes:
       - ./smsc:/mnt/smsc
@@ -131,7 +131,7 @@ services:
   hss:
     image: docker_open5gs
     container_name: epc_hss
-    profiles: ["hss","core"]
+    profiles: ["hss","base"]
     env_file:
       - .env_epc
     environment:
@@ -156,8 +156,8 @@ services:
   sgwc:
     image: docker_open5gs
     profiles: ["sgw","core"]
-    depends_on:
-      - hss
+    # depends_on:
+    #   - hss
     container_name: epc_sgwc
     env_file:
       - .env_epc
@@ -177,8 +177,8 @@ services:
   sgwu:
     image: docker_open5gs
     profiles: ["sgw","core"]
-    depends_on:
-      - hss
+    # depends_on:
+    #   - hss
     container_name: epc_sgwu
     env_file:
       - .env_epc
@@ -201,10 +201,10 @@ services:
     image: docker_open5gs
     profiles: ["mme","core"]
     depends_on:
-      - hss
+      # - hss
       - sgwc
       - sgwu
-      - metrics
+      # - metrics
     container_name: epc_mme
     env_file:
       - .env_epc
@@ -367,7 +367,7 @@ networks:
   epcnw:
     ipam:
       config:
-        - subnet: ${EPC_NETWORK}
+        - subnet: "${EPC_NETWORK}"
 volumes:
   mongodbdata: {}
   dbdata: {}

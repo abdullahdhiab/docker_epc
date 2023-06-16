@@ -12,3 +12,12 @@ sgwc:
 sgwu:
     pfcp:
       - addr: SGWU_IP
+        apn: internet
+
+mme:
+    gtpc:
+      addr: MME_IP
+
+smf:
+    gtpc:
+      addr: SMF_IP

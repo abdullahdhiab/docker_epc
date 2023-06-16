@@ -19,20 +19,20 @@ smf:
       - addr: 192.168.100.1/24
         dnn: internet
         dev: ogstun
-      - addr: 2001:230:cafe::1/48
-        dnn: internet
-        dev: ogstun
-      - addr: 192.168.101.1/24
-        dnn: ims
-        dev: ogstun2
-      - addr: 2001:230:babe::1/48
-        dnn: ims
-        dev: ogstun2
+      # - addr: 2001:230:cafe::1/48
+      #   dnn: internet
+      #   dev: ogstun
+      # - addr: 192.168.101.1/24
+      #   dnn: ims
+      #   dev: ogstun2
+      # - addr: 2001:230:babe::1/48
+      #   dnn: ims
+      #   dev: ogstun2
     dns:
       - 8.8.8.8
       - 8.8.4.4
-      - 2001:4860:4860::8888
-      - 2001:4860:4860::8844
+      # - 2001:4860:4860::8888
+      # - 2001:4860:4860::8844
     # p-cscf:
     #   - PCSCF_IP
     mtu: 1400
@@ -51,3 +51,4 @@ smf:
 upf:
     pfcp:
       - addr: UPF_IP
+        dnn: internet
